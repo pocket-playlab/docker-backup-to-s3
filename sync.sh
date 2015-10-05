@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -e
+set -e -x
 
 echo "Job started: $(date)"
 
-/usr/local/bin/s3cmd sync $PARAMS "$DATA_PATH" "$S3_PATH"
+/usr/local/bin/s3cmd sync "$DATA_PATH" "$S3_PATH" $PARAMS
 
 echo "Job finished: $(date)"
