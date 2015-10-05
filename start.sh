@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -e -x
+set -e
+
 
 ACCESS_KEY=${ACCESS_KEY:?"ACCESS_KEY env variable is required"}
 SECRET_KEY=${SECRET_KEY:?"SECRET_KEY env variable is required"}
