@@ -9,7 +9,6 @@ RUN pip install --upgrade pip
 RUN pip install s3cmd
 
 ADD s3cfg /root/.s3cfg
-RUN etcd-bk.sh
 
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
