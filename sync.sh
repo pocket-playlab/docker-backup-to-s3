@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e -x
+set -e
 
 echo "Job started: $(date)"
 
